@@ -1,3 +1,49 @@
 package Kotlin_Practice
 
-class Person
+class Person ( val name:String,var age:Int){
+//    val name: String
+//    var age: Int
+
+//    init{
+//        this.name = name
+//        this.age = age
+//        println("Object was created")
+//    }
+
+    fun speak(){
+        println("Hello!")
+    }
+
+    fun greet(name: String) {
+        println("Hello $name!")
+    }
+
+//    fun getYearOfBirth():Int {
+//        return 2016 - age
+//    }
+
+    fun getYearOfBirth() = 2016 - age
+
+
+}
+
+fun main(args: Array<String>) {
+    val person = Person("Jack", 17)
+
+    person.speak()
+    person.greet("world")
+
+    println(person.getYearOfBirth())
+    println(person.name)
+    println(person.age)
+
+
+
+
+
+    //person.name = "Peter"
+    //println(person.name)
+
+
+
+}
