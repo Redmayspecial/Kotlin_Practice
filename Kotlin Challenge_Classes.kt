@@ -20,19 +20,45 @@ class Book(val title: String, val author: String, val publicationYear: Int, var 
         println("Book Title      : ${this.title}")
         println("Book Author     : ${this.author}")
         println("Publication Year: ${this.publicationYear}")
-        if (borrowed) {
-            println("Status          : Borrowed")
+//        if (borrowed) {
+//            println("Status          : Borrowed")
+//
+//        } else {
+//            println("Status          : On Shelf")
+//        }
 
+    }
+
+    fun bookBorrow() {
+        if (this.borrowed) {
+            println("Sorry, ${this.title} is already on loan.")
         } else {
-            println("Status          : On Shelf")
+            println("Enjoy ${this.title}.  Remember, it is due back in two weeks.")
+            this.borrowed = true
         }
+    }
 
+    fun bookReturn() {
+        if (this.borrowed) {
+            println("Thank you for returning ${this.title}, we hope you enjoyed it.")
+            this.borrowed = false
+        } else {
+            println("This copy of ${this.title} is already on the shelves.")
+
+        }
     }
 
 }
 
 fun main(args: Array<String>) {
     var book = Book("Dune", "Frank Herbert", 1965,false)
+
     book.display()
+
+    book.bookReturn()
+    book.bookBorrow()
+    book.bookBorrow()
+    book.bookReturn()
+
 
 }
