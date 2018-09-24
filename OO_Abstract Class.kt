@@ -1,7 +1,6 @@
 package Kotlin_Practice
 
 
-
 abstract class Person (open val name:String, open var age:Int){  // OPEN a class and parameters that we can inherit from
 
 
@@ -51,6 +50,8 @@ fun main(args: Array<String>) {
 
     employee.receivePayment()
     employee.speak()
+
+
 
 
 
