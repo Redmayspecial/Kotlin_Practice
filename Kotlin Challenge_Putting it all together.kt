@@ -39,9 +39,9 @@ class DVDs(override val title: String, override val genre: String, override val 
 fun main(args: Array<String>) {
 
     val book = Books(title ="Dune", genre = "Science Fiction", publicationYear = 1961, author = "Frank Herbert")
-    println(book.borrow())
+    book.borrow()
 
     val dvd = DVDs(title ="Dune", genre = "Science Fiction", publicationYear = 1984, lengthInSeconds = 11820)
-    println(dvd.borrow())
+    dvd.borrow()
 
 }
