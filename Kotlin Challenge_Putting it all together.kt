@@ -19,17 +19,17 @@ interface Lendable {
     fun borrow()
 }
 
-abstract class InventoryItem(open val title: String,open val genre: String, open val publicationYear: Int) {
+abstract class InventoryItem(open val title: String,open val genre: String, open val publicationYear: Int): Lendable {
 
 }
 
-class Books(override val title: String, override val genre: String, override val publicationYear: Int, val author: String) : InventoryItem(title, genre, publicationYear), Lendable {
+class Books(override val title: String, override val genre: String, override val publicationYear: Int, val author: String) : InventoryItem(title, genre, publicationYear) {
     override fun borrow() {
         println("Thanks for borrowing $title by $author")
     }
 }
 
-class DVDs(override val title: String, override val genre: String, override val publicationYear: Int, val lengthInSeconds: Int) : InventoryItem(title, genre, publicationYear), Lendable {
+class DVDs(override val title: String, override val genre: String, override val publicationYear: Int, val lengthInSeconds: Int) : InventoryItem(title, genre, publicationYear) {
     override fun borrow() {
         println("Thanks for borrowing $title with a runtime of $lengthInSeconds seconds.")
     }
