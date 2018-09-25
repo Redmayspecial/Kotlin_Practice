@@ -37,10 +37,22 @@ fun main(args: Array<String>) {
     // binary numbers
     // 0..1 -> 0b1010
 
-    println(0b1010)
+    println(0b101101)
     println(0b00001010)
     println(0b11111111 == 0xFF)  // = 255
     println(0b11111111_00000000_00000000 == 0xFF0000)
+
+    println("Comparing to 248")
+    println(0b1111_1000 == 248)
+    println(0b11111100 == 248)
+    println(0b1111_1110 == 248)
+    println(0b1111_1111 == 248)
+
+    println("Comparing to 0xA3")
+    println(0b10100000 == 0xA3)
+    println(0b11000001 == 0xA3)
+    println(0b10100011 == 0xA3)
+    println(0b00111011 == 0xA3)
 
     // and operator
     // 1 and 1 == 1
@@ -60,5 +72,6 @@ fun main(args: Array<String>) {
     println(Color.GREEN.containsRed())
     println(Color.BLUE.containsRed())
     println(Color.YELLOW.containsRed())
+
 
 }
