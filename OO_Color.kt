@@ -74,4 +74,26 @@ fun main(args: Array<String>) {
     println(Color.YELLOW.containsRed())
 
 
+    // bitwise operators
+    //    1101
+    // or 1000
+    //---------
+    //    1101
+    println(0b1101 or 0b1000) //13
+
+    //     1101
+    // xor 1000
+    //----------
+    //     0101
+    println(0b1101 xor 0b1000) // 5
+
+    //inverse
+    //0b10011.inv() 0b...01100
+    // 0x0000001F == 0b00...0011111
+    println(0b10011.inv() and 0x0000001F) // 0b01100
+    // the 0x0 acts a filter for all the bits that we don't care about
+    // leaving just the last 5 bits
+    // without it we will get -20 and an answer
+
+
 }
