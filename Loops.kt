@@ -12,7 +12,7 @@ fun main(args: Array<String>) {
 }
 
 /**
-fun Kotlin_Practice.main(args: Array<String>) {
+fun Kotlin_Practice.functions.main(args: Array<String>) {
     for (c in "Python"){
         if (c == 'o'){
             break
@@ -36,7 +36,7 @@ fun Kotlin_Practice.main(args: Array<String>) {
 
 
 //While loops
-fun Kotlin_Practice.main(args: Array<String>) {
+fun Kotlin_Practice.functions.main(args: Array<String>) {
     var x = 9
     while(x >= 0){
         println(x)
@@ -57,7 +57,7 @@ fun Kotlin_Practice.main(args: Array<String>) {
 }
 
  FOR LOOPS
-fun Kotlin_Practice.main(args: Array<String>) {
+fun Kotlin_Practice.functions.main(args: Array<String>) {
     var sum = 0
     for(i in 1..100){
         sum = sum + i

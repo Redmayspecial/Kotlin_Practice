@@ -18,7 +18,7 @@ import java.util.*
         In each case, print out a message containing the range and the exact
         value of random.
 
-        Test your code in a Kotlin_Practice.main() function and run it several times to get
+        Test your code in a Kotlin_Practice.functions.main() function and run it several times to get
         different random numbers.
 
         You can check your solution by going to my GitHub page linked in this

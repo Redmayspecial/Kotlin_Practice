@@ -1,4 +1,4 @@
-package Kotlin_Practice
+package Kotlin_Practice.functions
 
 import java.util.*
 
@@ -36,5 +36,5 @@ fun main(args: Array<String>) {
     helloWorld()
     printWithSpaces("Kotlin is awesome")
     println(getCurrentDate())
-    println(max(17,42))
+    println(max(17, 42))
 }

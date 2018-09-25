@@ -1,5 +1,6 @@
 package Kotlin_Practice
 
+
 open class Person(open val name:String, open var age:Int){  // OPEN a class and parameters that we can inherit from
 //    val name: String
 //    var age: Int

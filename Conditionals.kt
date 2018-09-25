@@ -17,7 +17,7 @@ fun main(args: Array<String>) {
 
 
 /** the conditional takes the value of the last expression
-fun Kotlin_Practice.main(args: Array<String>) {
+fun Kotlin_Practice.functions.main(args: Array<String>) {
     val mode: Int = 3
 
     val result = when (mode) {
@@ -46,7 +46,7 @@ fun Kotlin_Practice.main(args: Array<String>) {
 }
 
  For TESTING THE WHEN CONDITIONALS
-fun Kotlin_Practice.main(args: Array<String>) {
+fun Kotlin_Practice.functions.main(args: Array<String>) {
     val mode: Int = 5
 
     when (mode) {
@@ -64,7 +64,7 @@ fun Kotlin_Practice.main(args: Array<String>) {
  *
  * For TESTING THE IF CONDITIONALS
  *
-fun Kotlin_Practice.main(args: Array<String>) {
+fun Kotlin_Practice.functions.main(args: Array<String>) {
     val age: Int = 28
     if (age < 18) {
         println("You cannot register.")
